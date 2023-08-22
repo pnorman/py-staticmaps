@@ -16,7 +16,7 @@ class TileDownloader:
     """A tile downloader class"""
 
     def __init__(self) -> None:
-        self._user_agent = f"Mozilla/5.0+(compatible; {LIB_NAME}/{VERSION}; {GITHUB_URL})"
+        self._user_agent = f"Mozilla/5.0 (compatible; {LIB_NAME}/{VERSION}; {GITHUB_URL})"
         self._sanitized_name_cache: typing.Dict[str, str] = {}
 
     def set_user_agent(self, user_agent: str) -> None:
